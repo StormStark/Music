@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:outlineAmbientShadowColor="@android:color/transparent"
+    app:contentPadding="16dp"
+    app:rippleColor="#494949"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardElevation="0dp"
+    app:strokeColor="@android:color/transparent"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/albumIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/default_song_icon" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:text="Song Name" />
+
+            <TextView
+                android:id="@+id/artist"
+                android:textColor="#C0C0C0"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:singleLine="true"
+                android:text="Song Name" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/songOptionIcon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right|center_vertical"
+            android:paddingLeft="16dp"
+            android:src="@drawable/ic_more_vert_black_24dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
